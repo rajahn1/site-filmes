@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CubosFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="script.js" defer></script>
+    
+    <link rel="shortcut icon" href="#">
+  </head>
+
+  <body>
+    <header class="header size">
+      <div class="header_container-logo">
+        <img src="./assets/logo-dark.png" alt="Logo" />
+        <h1 class="header_title">CUBOS FLIX</h1>
+      </div>
+      <div class="header_container-right">
+        <input class="input" type="text" placeholder="Digite o nome do filme..." />
+        <img class="btn-theme" src="./assets/light-mode.svg" alt="Botão de tema" />
+      </div>
+    </header>
+    <div class="container size">
+      <div class="movies-container">
+        <img class="btn-prev" src="./assets/arrow-left-dark.svg" alt="arrow left" />
+        <div class="movies">
+
+        </div>
+
+        <img class="btn-next" src="./assets/arrow-right-dark.svg" alt="arrow right" />
+      </div>
+
+      <div class="highlight size">
+        <a class="highlight_video-link" href="#" target="_blank">
+          <div class="highlight_video">
+            <img src="./assets/play.svg" alt="Play" />
+          </div>
+        </a>
+        <div class="highlight_info">
+          <div class="highlight_title-rating">
+            <h1 class="highlight_title"></h1>
+            <span class="highlight_rating"></span>
+          </div>
+          <div class="highlight_genre-launch">
+            <span class="highlight_genres"></span>
+            /
+            <span class="highlight_launch"></span>
+          </div>
+          <p class="highlight_description"></p>
+        </div>
+      </div>
+    </div>
+    <div class="modal hidden">
+      <div class="modal_body">
+        <img src="./assets/close-dark.svg" alt="Close" class="modal_close" />
+        <h3 class="modal_title"></h3>
+        <img class="modal_img" alt="modal_img" />
+        <p class="modal_description"></p>
+        <div class="modal_genre-average">
+          <div class="modal_genres"></div>
+          <div class="modal_average"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+  </body>
+</html>
